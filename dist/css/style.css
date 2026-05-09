@@ -207,6 +207,48 @@ button {
     color: #00cba9;
 }
 
+/* Social Media Hero */
+.hero-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    order: -1; /* tampil di atas foto */
+}
+
+.hero-social a {
+    color: #00cba9;
+    font-size: 28px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-social a:hover {
+    color: #009e85;
+    transform: translateY(-4px) scale(1.15);
+}
+
+@media (max-width: 768px) {
+    .hero-social a {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 475px) {
+    .hero-social a {
+        font-size: 22px;
+    }
+    .hero-social {
+        gap: 14px;
+    }
+}
+/* Social Media Hero */
+
+
 @media (max-width: 992px){
     .hero-box h1 {
         font-size: 48px;
