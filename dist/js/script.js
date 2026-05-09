@@ -2,6 +2,7 @@
 // Scroll to Top Button
 // =====================
 const scrollUp = document.querySelector(".scroll-up");
+const navbar = document.querySelector(".navbar");
 
 window.onscroll = () => {
     if (window.scrollY > 500) {
@@ -9,7 +10,15 @@ window.onscroll = () => {
     } else {
         scrollUp.classList.remove("scroll-active");
     }
+
+    // Efek shadow saat navbar di-scroll
+    if (window.scrollY > 10) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
 };
+
 
 // =====================
 // Hamburger Menu
