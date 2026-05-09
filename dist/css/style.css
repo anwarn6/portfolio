@@ -6,6 +6,22 @@
     font-family: "Poppins", sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 button {
     background: none;
     border: none;
@@ -367,7 +383,7 @@ header svg {
 
 .tentang-box .tools {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 10px;
     margin-top: 30px;
 }
@@ -415,7 +431,7 @@ header svg {
 
 @media (max-width: 768px) {
     .tentang-box .tools {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
     }
 
     .tentang-box .box:nth-child(1) {
